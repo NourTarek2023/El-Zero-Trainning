@@ -1,0 +1,75 @@
+/* Question 3 */
+
+div {
+    text-align: center !important;
+    color: #eee !important;
+    width: 400px;
+    margin: 50px auto;
+    font-size: 20px !important;
+    background-color: #eee !important;
+    border: 0px solid black !important;
+    position: relative;
+}
+
+div::before {
+    content: "Elzero";
+    text-align: center;
+    color: #000;
+    position: absolute;
+
+}
+
+/* Question 2 */
+
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+div {
+    color: var(--mainColor, red);
+    border: 3px solid var(--mainColor, black);
+    width: 400px;
+    margin: 20px auto;
+    padding: var(--mainPadding, 10px);
+}
+
+/* Question 1 */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.parent {
+    background-color: #f2f2f4;
+    text-align: center;
+    margin: 100px auto;
+    width: 400px;
+    height: 180px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition-duration: 0.5s;
+    transition-property: margin;
+    transition-timing-function: ease;
+}
+
+.child {
+    background-color: #dededc;
+    width: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-property: margin;
+    transition-timing-function: ease;
+}
+
+.parent:hover {
+    margin-top: 50px;
+}
+
+.child:hover {
+    margin-top: 50px;
+}

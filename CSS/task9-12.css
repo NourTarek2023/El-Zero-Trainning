@@ -1,0 +1,46 @@
+.q1 {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    outline: 5px solid black;
+
+}
+
+.S1 {
+    background-color: rgb(171, 167, 163);
+    border: 5px solid red;
+}
+
+.S2 {
+    background-color: rgb(171, 167, 163);
+    border: 5px solid;
+    border-color: blue green;
+}
+
+.S3 {
+    background-color: rgb(171, 167, 163);
+    border: 5px dashed;
+    border-color: red green blue yellow;
+}
+
+.element {
+    background-color: #eee;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.element-1 {
+    border-left: 5px solid red;
+
+}
+
+.element-2 {
+    visibility: hidden;
+}
+
+.element-3 {
+    border-left: 5px solid green;
+
+}

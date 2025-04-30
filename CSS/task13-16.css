@@ -1,0 +1,22 @@
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+.parent p,
+.title {
+    color: green;
+}
+
+.q2 {
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    max-width: 400px;
+    width: fit-content;
+    max-height: 40px;
+    overflow: hidden;
+}
