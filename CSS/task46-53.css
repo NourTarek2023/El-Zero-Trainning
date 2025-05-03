@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 .task-1 {
@@ -38,4 +39,183 @@
     text-align: center;
     width: 180px;
     padding: 10px;
+}
+
+/* --------------------------------------------------------------------------- */
+.task-3 {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.task-3>div {
+    background-color: #607d8b;
+    color: white;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.task-3>.one {
+    align-self: flex-start;
+}
+
+.task-3>.three {
+    order: 3;
+    align-self: flex-end;
+}
+
+.task-3>.four {
+    order: 1;
+}
+
+.task-3>.six {
+    order: 4;
+}
+
+/* --------------------------------------------------------------------------- */
+.task-4 {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.task-4>div {
+    background-color: #009688;
+    color: white;
+    height: 250px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-4>.two {
+    align-self: flex-start;
+    width: 50%;
+}
+
+/* --------------------------------------------------------------------------- */
+.task-5 {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.task-5>div {
+    color: white;
+    width: 100px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-5>.one {
+    background-color: #ff9800;
+    order: 1;
+}
+
+.task-5>.two {
+    background-color: #8bc34a;
+    order: 2;
+    align-self: flex-end;
+}
+
+.task-5>.three {
+    background-color: #795548;
+    order: 3;
+}
+
+.task-5>.four {
+    background-color: #673ab7;
+    align-self: flex-end;
+}
+
+/* --------------------------------------------------------------------------- */
+:root {
+    --main-padding: 10px;
+    --main-margin: 10px;
+    --section-color: #ddd
+}
+
+.page {
+    background-color: #eee;
+    width: 800px;
+    padding: var(--main-padding);
+    margin: 20px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-color: var(--section-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--main-padding);
+    width: 50px;
+}
+
+.links {
+    background-color: var(--section-color);
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: var(--main-padding);
+    margin-left: var(--main-margin);
+}
+
+.links>li {
+    padding: 0 var(--main-padding);
+}
+
+.main-area {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin: var(--main-margin) 0;
+}
+
+.main-area>div {
+    background-color: var(--section-color);
+    padding: var(--main-padding);
+}
+
+.content {
+    flex-basis: 70%;
+    margin-right: var(--main-margin);
+}
+
+.sidebar {
+    flex-basis: 30%;
+}
+
+.footer {
+    display: flex;
+    background-color: var(--section-color);
+    padding: var(--main-padding);
+    justify-content: space-between;
 }
