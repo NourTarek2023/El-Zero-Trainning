@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-1 {
+    background-color: #eee;
+    margin: 20px auto;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    padding: 20px;
+}
+
+.task-1:empty {
+    background-color: #ff0000;
+}
+
+/* --------------------------------------------------------------------------- */
+.task-2 {
+    background-color: #d4d4d4;
+    margin: 20px auto;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.task-2::first-letter {
+    display: inline-block;
+    position: absolute;
+    background-color: #ff0000;
+    color: white;
+    padding: 12px;
+    margin-left: -30px;
+}
+
+/* --------------------------------------------------------------------------- */
+.task-3 p {
+    background-color: #efefef;
+    width: 400px;
+    margin: 20px auto;
+    border-left: 4px solid #e91e63;
+    padding: 20px;
+    position: relative;
+
+}
+
+.task-3>p::before {
+    content: "";
+    position: absolute;
+    border-color: transparent #e91e63 transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+    left: -23px;
+}
+
+.task-3>p::after {
+    content: attr(data-person);
+    position: absolute;
+    background-color: #ddd;
+    padding: 10px;
+    margin-top: -18px;
+    width: 60px;
+    left: -100px;
+    top: 50%;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------------- */
+.task-4 p {
+    background-color: #efefef;
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    position: relative;
+    counter-increment: number;
+}
+
+.task-4>p::before {
+    content: counter(number);
+    position: absolute;
+    background-color: #f44336;
+    color: white;
+    height: inherit;
+    padding: 15px;
+    left: -38px;
+    top: 0;
+    font-weight: bold;
+}
+
+.task-4>p::after {
+    content: "";
+    position: absolute;
+    background-color: #f44336;
+    width: 4px;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
